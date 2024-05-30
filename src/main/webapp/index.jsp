@@ -9,6 +9,6 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="${pageContext.request.contextPath}/login">Login</a>
+<a href="${pageContext.request.contextPath}/home/login">Login</a>
 </body>
 </html>
