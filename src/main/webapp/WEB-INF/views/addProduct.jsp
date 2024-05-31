@@ -11,6 +11,15 @@
     <title>Title</title>
 </head>
 <body>
-
+    //write add product interface
+    <form action="${pageContext.request.contextPath}/home/allProducts/addProduct" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" value="${requestScope.product.name}"/>
+        <label for="price">Price</label>
+        <input type="text" id="price" name="price" placeholder="Price" value="${requestScope.product.price}"/>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" placeholder="Description" value="${requestScope.product.description}"/>
+        <button type="submit" id="submitButton">Add Product</button>
+    </form>
 </body>
 </html>
