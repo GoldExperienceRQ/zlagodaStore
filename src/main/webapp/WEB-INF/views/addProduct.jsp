@@ -13,12 +13,19 @@
 <body>
     //write add product interface
     <form action="${pageContext.request.contextPath}/home/allProducts/addProduct" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Name" value="${requestScope.product.name}"/>
-        <label for="price">Price</label>
-        <input type="text" id="price" name="price" placeholder="Price" value="${requestScope.product.price}"/>
-        <label for="description">Description</label>
-        <input type="text" id="description" name="description" placeholder="Description" value="${requestScope.product.description}"/>
+        // Add following fields: name, category, characteristics
+
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Product Name"/>
+
+        <label for="category">Category</label>
+        <select id="category" name="category">
+                <option value="">Category</option>
+        </select>
+
+        <label for="characteristics">Characteristics</label>
+        <input type="text" id="characteristics" name="characteristics" placeholder="Characteristics"/>
+
         <button type="submit" id="submitButton">Add Product</button>
     </form>
 </body>

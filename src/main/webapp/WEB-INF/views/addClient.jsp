@@ -16,11 +16,32 @@
 <br/>
 <form action="${pageContext.request.contextPath}/home/allClients/addClient" method="POST">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name" value="${requestScope.client.name}"/>
+    <input type="text" id="name" name="name" placeholder="Name"/>
+
+    <label for="surname">Surname</label>
+    <input type="text" id="surname" name="surname" placeholder="Surname" />
+
+    <label for="patronymic">Patronymic</label>
+    <input type="text" id="patronymic" name="patronymic" placeholder="Patronymic(not necessary)" />
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="City"/>
+
+    <label for="street">Street</label>
+    <input type="text" id="street" name="street" placeholder="Street"/>
+
+    <label for="index">Index</label>
+    <input type="number" id="index" name="index" placeholder="Index"/>
+
     <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email" value="${requestScope.client.email}"/>
+    <input type="text" id="email" name="email" placeholder="Email"/>
+
     <label for="phone">Phone</label>
-    <input type="text" id="phone" name="phone" placeholder="Phone" value="${requestScope.client.phone}"/>
+    <input type="text" id="phone" name="phone" placeholder="Phone"/>
+
+    <label for="percent">Percent</label>
+    <input type="number" id="percent" name="percent" placeholder="Discount Percent"/>
+
     <button type="submit" id="submitButton">Add Client</button>
 </form>
 </body>

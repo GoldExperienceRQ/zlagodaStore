@@ -15,8 +15,8 @@
 <h1>Add category</h1>
 <br/>
 <form action="${pageContext.request.contextPath}/home/allCategories/addCategory" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name"/>
+    <label for="category-name">Category Name</label>
+    <input type="text" id="category-name" name="category-name" placeholder="Category Name"/>
     <button type="submit" id="submitButton">Add</button>
 </form>
 </body>

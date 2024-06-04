@@ -16,14 +16,20 @@
 <h1>Add product in store</h1>
 <br/>
 <form action="${pageContext.request.contextPath}/home/allProductsInStore/addProductInStore" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name"/>
+    <label for="id-product">Id of the product</label>
+    <select id="id-product" name="id-product">
+        <option value="">Product</option>
+    </select>
+
     <label for="price">Price</label>
-    <input type="text" id="price" name="price" placeholder="Price"/>
-    <label for="quantity">Quantity</label>
-    <input type="text" id="quantity" name="quantity" placeholder="Quantity"/>
-    <label for="category">Category</label>
-    <input type="text" id="category" name="category" placeholder="Category">
+    <input type="number" id="price" name="price" placeholder="Price"/>
+
+    <label for="amount">Amount</label>
+    <input type="number" id="amount" name="amount" placeholder="Amount"/>
+
+    <label for="is-on-sale">Is on sale</label>
+    <input type="checkbox" id="is-on-sale" name="is-on-sale"/>
+
     <button type="submit" id="submitButton">Add</button>
 </form>
 </body>

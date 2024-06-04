@@ -14,7 +14,8 @@
     <a href="${pageContext.request.contextPath}/home">Go home</a>
     <form action="${pageContext.request.contextPath}/home/login" method="POST">
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Email" value="${requestScope.loginUser.email}"/>
+        <input type="text" id="email" name="email" placeholder="Email" />
+
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Password"/>
         <button type="submit" id="submitButton">Login</button>
