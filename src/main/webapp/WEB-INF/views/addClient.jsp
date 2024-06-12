@@ -31,10 +31,7 @@
     <input type="text" id="street" name="street" placeholder="Street"/>
 
     <label for="index">Index</label>
-    <input type="number" id="index" name="index" placeholder="Index"/>
-
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email"/>
+    <input type="text" id="index" name="index" placeholder="Index"/>
 
     <label for="phone">Phone</label>
     <input type="text" id="phone" name="phone" placeholder="Phone"/>
@@ -44,5 +41,6 @@
 
     <button type="submit" id="submitButton">Add Client</button>
 </form>
+<script src="${pageContext.request.contextPath}/scripts/addClientValidation.js"></script>
 </body>
 </html>

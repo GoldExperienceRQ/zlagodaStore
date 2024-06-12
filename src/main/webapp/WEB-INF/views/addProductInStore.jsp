@@ -16,21 +16,31 @@
 <h1>Add product in store</h1>
 <br/>
 <form action="${pageContext.request.contextPath}/home/allProductsInStore/addProductInStore" method="POST">
+
     <label for="id-product">Id of the product</label>
     <select id="id-product" name="id-product">
-        <option value="">Product</option>
+        <option value="default">Product Id</option>
+        <option value="1"> Option 1</option>
+    </select>
+
+    <label for="upc-prom">UPC of the sale product</label>
+    <select id="upc-prom" name="upc-prom">
+        <option value="default">Product UPC</option>
+        <option value="1"> Option 1</option>
     </select>
 
     <label for="price">Price</label>
     <input type="number" id="price" name="price" placeholder="Price"/>
 
-    <label for="amount">Amount</label>
-    <input type="number" id="amount" name="amount" placeholder="Amount"/>
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" placeholder="Quantity"/>
 
-    <label for="is-on-sale">Is on sale</label>
-    <input type="checkbox" id="is-on-sale" name="is-on-sale"/>
+    <label for="is-promotional">Is promotional</label>
+    <input type="checkbox" id="is-promotional" name="is-promotional"/>
 
     <button type="submit" id="submitButton">Add</button>
+
+    <script src="${pageContext.request.contextPath}/scripts/addProductInStoreValidation.js"></script>
 </form>
 </body>
 </html>

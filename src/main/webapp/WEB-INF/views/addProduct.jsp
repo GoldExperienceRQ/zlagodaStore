@@ -11,22 +11,25 @@
     <title>Title</title>
 </head>
 <body>
-    //write add product interface
+<a href="${pageContext.request.contextPath}/home">Go home</a>
+
     <form action="${pageContext.request.contextPath}/home/allProducts/addProduct" method="POST">
-        // Add following fields: name, category, characteristics
 
         <label for="product-name">Product Name</label>
         <input type="text" id="product-name" name="product-name" placeholder="Product Name"/>
 
         <label for="category">Category</label>
-        <select id="category" name="category">
-                <option value="">Category</option>
+        <select id="category" name="category" >
+                <option value="default">Select Category</option>
+                <option value="1">Option 1</option>
         </select>
 
         <label for="characteristics">Characteristics</label>
         <input type="text" id="characteristics" name="characteristics" placeholder="Characteristics"/>
 
         <button type="submit" id="submitButton">Add Product</button>
+
+        <script src="${pageContext.request.contextPath}/scripts/addProductValidation.js"></script>
     </form>
 </body>
 </html>

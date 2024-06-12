@@ -45,13 +45,12 @@
     <label for="index">Index</label>
     <input type="number" id="index" name="index" placeholder="Index"/>
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email"/>
-
     <label for="phone">Phone</label>
     <input type="text" id="phone" name="phone" placeholder="Phone"/>
 
     <button type="submit" id="submitButton">Add Employee</button>
+
+    <script src="${pageContext.request.contextPath}/scripts/addEmployeeValidation.js"></script>
 </form>
 </body>
 </html>
