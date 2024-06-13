@@ -19,6 +19,6 @@
     <input type="text" id="category-name" name="category-name" placeholder="Category Name"/>
     <button type="submit" id="submitButton">Add</button>
 </form>
-<script src="${pageContext.request.contextPath}/scripts/addCategoryValidation.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/validations/addCategoryValidation.js"></script>
 </body>
 </html>

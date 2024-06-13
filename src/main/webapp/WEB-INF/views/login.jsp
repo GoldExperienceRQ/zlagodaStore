@@ -21,6 +21,6 @@
         <button type="submit" id="login-button">Login</button>
     </form>
 
-<script src="${pageContext.request.contextPath}/scripts/loginValidation.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/validations/loginValidation.js"></script>
 </body>
 </html>

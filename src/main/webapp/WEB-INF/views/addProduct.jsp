@@ -29,7 +29,7 @@
 
         <button type="submit" id="submitButton">Add Product</button>
 
-        <script src="${pageContext.request.contextPath}/scripts/addProductValidation.js"></script>
+        <script src="${pageContext.request.contextPath}/scripts/validations/addProductValidation.js"></script>
     </form>
 </body>
 </html>

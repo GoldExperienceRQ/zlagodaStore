@@ -16,6 +16,7 @@ public enum CommandEnum {
             this.command = new PageNotFoundCommand();
         }
     },
+
     GET_ALL_PRODUCTS_IN_STORE {
         {
             this.key = "GET:allProductsInStore";
@@ -68,6 +69,18 @@ public enum CommandEnum {
         {
             this.key = "POST:allCategories/addCategory";
             this.command = new PostAddCategoryCommand();
+        }
+    },
+    DELETE_CATEGORY {
+        {
+            this.key = "POST:allCategories/deleteCategory";
+            this.command = new DeleteCategoryCommand();
+        }
+    },
+    UPDATE_CATEGORY {
+        {
+            this.key = "POST:allCategories/updateCategory";
+            this.command = new UpdateCategoryCommand();
         }
     },
     GET_ADD_PRODUCT {

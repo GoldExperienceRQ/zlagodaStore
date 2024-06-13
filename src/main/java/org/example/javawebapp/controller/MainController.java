@@ -21,6 +21,9 @@ public class MainController extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
         processRequest(req, res);
     }
+    public void doDelete(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+        processRequest(req, res);
+    }
     private void processRequest(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
         System.out.println("Processing request");
         String commandKey = CommandKeyGenerator.generateKey(req);

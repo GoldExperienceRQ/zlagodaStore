@@ -50,7 +50,7 @@
 
     <button type="submit" id="submitButton">Add Employee</button>
 
-    <script src="${pageContext.request.contextPath}/scripts/addEmployeeValidation.js"></script>
+    <script src="${pageContext.request.contextPath}/scripts/validations/addEmployeeValidation.js"></script>
 </form>
 </body>
 </html>

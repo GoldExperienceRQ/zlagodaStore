@@ -41,6 +41,6 @@
 
     <button type="submit" id="submitButton">Add Client</button>
 </form>
-<script src="${pageContext.request.contextPath}/scripts/addClientValidation.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/validations/addClientValidation.js"></script>
 </body>
 </html>
