@@ -1,14 +1,11 @@
-const updateBtns = document.querySelectorAll('.update-category-btn');
+const deleteCLientBtns = document.querySelectorAll('.delete-client-btn');
 
-updateBtns.forEach(updateBtn => {
-    updateBtn.addEventListener('click', (e) => {
-        let name = prompt("Enter new category name");
-        if(name !=null && name !== "") {
+deleteCLientBtns.forEach(deleteBtn => {
+    deleteBtn.addEventListener('click', (e) => {
+            console.log(deleteBtn.parentElement.querySelector("p").id)
             const params = new URLSearchParams();
-            params.append("category-id", updateBtn.parentElement.querySelector("p").id);
-            params.append('category-name', name);
-
-            fetch("allCategories/updateCategory", {
+            params.append('client-number', deleteBtn.parentElement.querySelector("p").id);
+            fetch("allClients/deleteClient", {
                 method: 'POST',
                 headers: {
                     'Content-Type': "application/x-www-form-urlencoded",
@@ -18,7 +15,7 @@ updateBtns.forEach(updateBtn => {
                 .then(response => {
                     if (response.ok) {
                         console.log(response.url)
-                        console.log("successfully updated category");
+                        console.log("successfully deleted client");
                         window.location.reload();
                     } else {
                         response.json().then(data => {
@@ -29,9 +26,6 @@ updateBtns.forEach(updateBtn => {
                 .catch(error => {
                     console.error('Error:', error);
                 });
-
-        }else{
-            console.log("Category name is required")
         }
-    });
+    );
 });

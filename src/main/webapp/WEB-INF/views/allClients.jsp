@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: valen
@@ -16,5 +17,17 @@
 <h1>All clients</h1>
 <br/>
 <a href="${pageContext.request.contextPath}/home/allClients/addClient">Add Client</a>
+
+<c:forEach var="client" items="${clients}">
+    <div>
+        <p id="${client.clientNumber}">${client.clientNumber}, ${client.name}, ${client.surname}, ${client.patronymic}, ${client.city}, ${client.street}, ${client.index}, ${client.percent}</p>
+        <button type="button" class="update-client-btn">Update</button>
+        <button type="button" class="delete-client-btn">Delete</button>
+    </div>
+</c:forEach>
+
+
+<script src="${pageContext.request.contextPath}/scripts/clientMethods/deleteClient.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/clientMethods/updateClient.js"></script>
 </body>
 </html>

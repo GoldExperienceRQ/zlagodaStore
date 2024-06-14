@@ -136,6 +136,18 @@ public enum CommandEnum {
             this.key = "GET:allClients";
             this.command = new GetAllClientsCommand();
         }
+    },
+    DELETE_CLIENT {
+        {
+            this.key = "POST:allClients/deleteClient";
+            this.command = new DeleteClientCommand();
+        }
+    },
+    UPDATE_CLIENT {
+        {
+            this.key = "POST:allClients/updateClient";
+            this.command = new UpdateClientCommand();
+        }
     };
     Command command;
     String key;

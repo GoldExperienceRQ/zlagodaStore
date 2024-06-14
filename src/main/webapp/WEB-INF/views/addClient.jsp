@@ -15,6 +15,9 @@
 <h1>Add Client</h1>
 <br/>
 <form action="${pageContext.request.contextPath}/home/allClients/addClient" method="POST">
+    <label for="number">ClientNumber</label>
+    <input type="text" id="number" name="number" placeholder="ClientNumber"/>
+
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Name"/>
 
