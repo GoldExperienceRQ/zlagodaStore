@@ -53,6 +53,18 @@ public enum CommandEnum {
             this.command = new PostAddEmployeeCommand();
         }
     },
+    UPDATE_EMPLOYEE {
+        {
+            this.key = "POST:allEmployees/updateEmployee";
+            this.command = new UpdateEmployeeCommand();
+        }
+    },
+    DELETE_EMPLOYEE {
+        {
+            this.key = "POST:allEmployees/deleteEmployee";
+            this.command = new DeleteEmployeeCommand();
+        }
+    },
     GET_ALL_CATEGORIES {
         {
             this.key = "GET:allCategories";

@@ -6,6 +6,7 @@ function validateInputs(errors){
 
         const notNecessary = true
         const list = {
+            employee_id: 13,
             name: 50,
             surname: 50,
             patronymic: [50, notNecessary],

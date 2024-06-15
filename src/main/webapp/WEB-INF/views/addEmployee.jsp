@@ -15,6 +15,9 @@
 <h1>Add Employee</h1>
 <br/>
 <form action="${pageContext.request.contextPath}/home/allEmployees/addEmployee" method="POST">
+    <label for="employee_id">Id</label>
+    <input type="text" id="employee_id" name="employee_id" placeholder="Employee Id"/>
+
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Name"/>
 
@@ -24,14 +27,14 @@
     <label for="patronymic">Patronymic</label>
     <input type="text" id="patronymic" name="patronymic" placeholder="Patronymic(not necessary)" />
 
-    <label for="position">Position</label>
-    <input type="text" id="position" name="position" placeholder="Position"/>
+    <label for="role">Position</label>
+    <input type="text" id="role" name="role" placeholder="Role"/>
 
     <label for="salary">Salary</label>
     <input type="number" id="salary" name="salary" placeholder="Salary in dollars"/>
 
-    <label for="startDate">Start Date</label>
-    <input type="date" id="startDate" name="startDate" placeholder="Start Date"/>
+    <label for="dateOfStart">Start Date</label>
+    <input type="date" id="dateOfStart" name="dateOfStart" placeholder="Start Date"/>
 
     <label for="dateOfBirth">Date Of Birth</label>
     <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Date Of Birth"/>
