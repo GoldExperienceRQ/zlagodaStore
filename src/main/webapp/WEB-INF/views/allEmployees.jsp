@@ -21,8 +21,12 @@
 <c:forEach var="employee" items="${employees}">
     <div>
         <p id="${employee.employeeId}">${employee.employeeId}, ${employee.name}, ${employee.surname}, ${employee.patronymic}, ${employee.role}, ${employee.salary}, ${employee.dateOfBirth}, ${employee.dateOfStart}, ${employee.phoneNumber}, ${employee.city}, ${employee.street}, ${employee.index}</p>
-        <a href="${pageContext.request.contextPath}/home/allEmployees/updateEmployee">Update</a>
+        <button type="button" class="employee-update-btn">Update</button>
+        <button type="button" class="employee-delete-btn">Delete</button>
     </div>
 </c:forEach>
+
+<script src="${pageContext.request.contextPath}/scripts/employeeMethods/deleteEmployee.js" ></script>
+<script src="${pageContext.request.contextPath}/scripts/employeeMethods/updateEmployee.js" ></script>
 </body>
 </html>

@@ -27,8 +27,9 @@ public class Employee {
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
-        this.salary = salary;
         this.role = role;
+        this.salary = salary;
+
         this.dateOfStart = dateOfStart;
         this.dateOfBirth = dateOfBirth;
         this.phoneNumber = phoneNumber;

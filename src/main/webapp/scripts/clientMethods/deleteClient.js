@@ -2,6 +2,7 @@ const deleteCLientBtns = document.querySelectorAll('.delete-client-btn');
 
 deleteCLientBtns.forEach(deleteBtn => {
     deleteBtn.addEventListener('click', (e) => {
+        console.log("clicked")
             console.log(deleteBtn.parentElement.querySelector("p").id)
             const params = new URLSearchParams();
             params.append('client-number', deleteBtn.parentElement.querySelector("p").id);

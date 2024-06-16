@@ -13,6 +13,23 @@ import javax.swing.text.View;
 public class UpdateEmployeeCommand implements Command {
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse res) {
-        return null;
+
+        EmployeeJDBCDao employeeJDBCDao = new EmployeeJDBCDao();
+        employeeJDBCDao.update(new Employee(
+                req.getParameter("id"),
+                req.getParameter("name"),
+                req.getParameter("surname"),
+                req.getParameter("patronymic"),
+                req.getParameter("role"),
+                Integer.parseInt(req.getParameter("salary")),
+                req.getParameter("dateOfStart"),
+                req.getParameter("dateOfBirth"),
+                req.getParameter("phone"),
+                req.getParameter("city"),
+                req.getParameter("street"),
+                req.getParameter("index")
+        ));
+        RedirectionManager.redirect(new HttpWrapper(req, res), "/allEmployees");
+        return RedirectionManager.REDIRECTION;
     }
 }
