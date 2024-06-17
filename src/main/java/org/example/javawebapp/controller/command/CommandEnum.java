@@ -107,6 +107,24 @@ public enum CommandEnum {
             this.command = new PostAddProductCommand();
         }
     },
+    DELETE_PRODUCT {
+        {
+            this.key = "POST:allProducts/deleteProduct";
+            this.command = new DeleteProductCommand();
+        }
+    },
+    GET_UPDATE_PRODUCT {
+        {
+            this.key = "GET:allProducts/updateProduct";
+            this.command = new GetUpdateProductCommand();
+        }
+    },
+    POST_UPDATE_PRODUCT {
+        {
+            this.key = "POST:allProducts/updateProduct";
+            this.command = new PostUpdateProductCommand();
+        }
+    },
     GET_LOGOUT {
         {
             this.key = "GET:logout";

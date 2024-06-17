@@ -12,6 +12,7 @@ public final class Page {
     public static final String LOGIN_VIEW = PREFIX + "login" + SUFFIX;
     public static final String ALL_PRODUCTS_VIEW = PREFIX + "allProducts" + SUFFIX;
     public static final String ADD_PRODUCT_VIEW = PREFIX + "addProduct" + SUFFIX;
+    public static final String UPDATE_PRODUCT_VIEW = PREFIX + "updateProduct" + SUFFIX;
     public static final String GET_ALL_CLIENTS_VIEW = PREFIX + "allClients" + SUFFIX;
     public static final String ADD_CLIENT_VIEW = PREFIX  + "addClient" + SUFFIX;
     public static final String ALL_CATEGORIES_VIEW = PREFIX + "allCategories" + SUFFIX;

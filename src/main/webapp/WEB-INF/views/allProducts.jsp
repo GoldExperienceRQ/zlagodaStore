@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: valen
@@ -16,5 +17,17 @@
     <br/>
     <a href="${pageContext.request.contextPath}/home/allProducts/addProduct">Add Product</a>
     <br/>
+<c:forEach var="product" items="${products}">
+
+        <div>
+            <p id="${product.id}">${product.id}, ${product.name}, ${categoryMap[product.category]}, ${product.description}</p>
+
+            <button type="button" class="product-update-btn">Update</button>
+            <button type="button" class="product-delete-btn">Delete</button>
+        </div>
+    </c:forEach>
+
+<script src="${pageContext.request.contextPath}/scripts/productMethods/updateProduct.js"></script>
+    <script src="${pageContext.request.contextPath}/scripts/productMethods/deleteProduct.js"></script>
 </body>
 </html>

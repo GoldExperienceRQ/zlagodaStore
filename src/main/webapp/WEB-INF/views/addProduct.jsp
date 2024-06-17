@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: valen
@@ -21,7 +22,9 @@
         <label for="category">Category</label>
         <select id="category" name="category" >
                 <option value="default">Select Category</option>
-                <option value="1">Option 1</option>
+                <c:forEach var="category" items="${categories}">
+                    <option value="${category.id}">${category.name}</option>
+                </c:forEach>
         </select>
 
         <label for="characteristics">Characteristics</label>

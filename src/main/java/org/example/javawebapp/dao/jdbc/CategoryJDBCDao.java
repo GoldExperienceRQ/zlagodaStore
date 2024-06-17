@@ -64,4 +64,16 @@ public class CategoryJDBCDao implements GenericDao<Category> {
         }
     }
 
+    public String getNameById(int id) {
+        String name = "";
+        try{
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT category_name FROM category WHERE category_id = " + id);
+            rs.next();
+            name = rs.getString("category_name");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return name;
+    }
 }

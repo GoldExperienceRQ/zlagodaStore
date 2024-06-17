@@ -17,6 +17,10 @@
 <br/>
 <form action="${pageContext.request.contextPath}/home/allProductsInStore/addProductInStore" method="POST">
 
+
+    <label for="upc">Upc of the product</label>
+    <input type="text" id="upc" name="upc" placeholder="Upc">
+
     <label for="id-product">Id of the product</label>
     <select id="id-product" name="id-product">
         <option value="default">Product Id</option>
