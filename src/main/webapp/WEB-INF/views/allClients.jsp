@@ -28,6 +28,6 @@
 
 
 <script src="${pageContext.request.contextPath}/scripts/clientMethods/deleteClient.js"></script>
-<script src="${pageContext.request.contextPath}/scripts/clientMethods/updateClient.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/clientMethods/updateClientt.js"></script>
 </body>
 </html>

@@ -11,6 +11,8 @@ public class PostLoginCommand implements Command {
     public String execute(HttpServletRequest req, HttpServletResponse res) {
         HttpSession session = req.getSession();
         session.setAttribute("isLoggedIn", true);
+        System.out.println(req.getAttribute("login-name"));
+        session.setAttribute("user_role", req.getParameter("login-name"));
         RedirectionManager.redirect(new HttpWrapper(req, res), "");
         return RedirectionManager.REDIRECTION;
     }

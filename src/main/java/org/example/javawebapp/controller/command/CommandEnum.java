@@ -4,7 +4,10 @@ import org.example.javawebapp.controller.command.auth.GetLogoutCommand;
 import org.example.javawebapp.controller.command.auth.LoginCommand;
 import org.example.javawebapp.controller.command.auth.PostLoginCommand;
 import org.example.javawebapp.controller.command.category.*;
+import org.example.javawebapp.controller.command.check.*;
 import org.example.javawebapp.controller.command.clients.*;
+import org.example.javawebapp.controller.command.complexQueries.ComplexQueryOneCommand;
+import org.example.javawebapp.controller.command.complexQueries.ComplexQueryTwoCommand;
 import org.example.javawebapp.controller.command.employee.*;
 import org.example.javawebapp.controller.command.product.*;
 import org.example.javawebapp.controller.command.productInStore.*;
@@ -16,7 +19,42 @@ public enum CommandEnum {
             this.command = new PageNotFoundCommand();
         }
     },
-
+    GET_ALL_CHECKS {
+        {
+            this.key = "GET:allChecks";
+            this.command = new GetAllChecksCommand();
+        }
+    },
+    GET_ADD_CHECK {
+        {
+            this.key = "GET:allChecks/addCheck";
+            this.command = new GetAddCheckCommand();
+        }
+    },
+    POST_ADD_CHECK {
+        {
+            this.key = "POST:allChecks/addCheck";
+            this.command = new PostAddCheckCommand();
+        }
+    },
+    DELETE_CHECK {
+        {
+            this.key = "POST:allChecks/deleteCheck";
+            this.command = new DeleteCheckCommand();
+        }
+    },
+    GET_UPDATE_CHECK {
+        {
+            this.key = "GET:allChecks/updateCheck";
+            this.command = new GetUpdateCheckCommand();
+        }
+    },
+    POST_UPDATE_CHECK{
+        {
+            this.key = "POST:allChecks/updateCheck";
+            this.command = new PostUpdateCheckCommand();
+        }
+    },
     GET_ALL_PRODUCTS_IN_STORE {
         {
             this.key = "GET:allProductsInStore";
@@ -33,6 +71,24 @@ public enum CommandEnum {
         {
             this.key = "POST:allProductsInStore/addProductInStore";
             this.command = new PostAddProductInStoreCommand();
+        }
+    },
+    DELETE_PRODUCT_IN_STORE {
+        {
+            this.key = "POST:allProductsInStore/deleteProductInStore";
+            this.command = new DeleteProductInStoreCommand();
+        }
+    },
+    GET_UPDATE_PRODUCT_IN_STORE {
+        {
+            this.key = "GET:allProductsInStore/updateProductInStore";
+            this.command = new GetUpdateProductInStoreCommand();
+        }
+    },
+    POST_UPDATE_PRODUCT_IN_STORE {
+        {
+            this.key = "POST:allProductsInStore/updateProductInStore";
+            this.command = new PostUpdateProductInStoreCommand();
         }
     },
     GET_ALL_EMPLOYEES {
@@ -53,10 +109,16 @@ public enum CommandEnum {
             this.command = new PostAddEmployeeCommand();
         }
     },
-    UPDATE_EMPLOYEE {
+    GET_UPDATE_EMPLOYEE {
+        {
+            this.key = "GET:allEmployees/updateEmployee";
+            this.command = new GetUpdateEmployeeCommand();
+        }
+    },
+    POST_UPDATE_EMPLOYEE {
         {
             this.key = "POST:allEmployees/updateEmployee";
-            this.command = new UpdateEmployeeCommand();
+            this.command = new PostUpdateEmployeeCommand();
         }
     },
     DELETE_EMPLOYEE {
@@ -77,6 +139,18 @@ public enum CommandEnum {
             this.command = new GetAddCategoryCommand();
         }
     },
+    GET_UPDATE_CATEGORY {
+        {
+            this.key = "GET:allCategories/updateCategory";
+            this.command = new GetUpdateCategoryCommand();
+        }
+    },
+    POST_UPDATE_CATEGORY {
+        {
+            this.key = "POST:allCategories/updateCategory";
+            this.command = new PostUpdateCategoryCommand();
+        }
+    },
     POST_ADD_CATEGORY {
         {
             this.key = "POST:allCategories/addCategory";
@@ -87,12 +161,6 @@ public enum CommandEnum {
         {
             this.key = "POST:allCategories/deleteCategory";
             this.command = new DeleteCategoryCommand();
-        }
-    },
-    UPDATE_CATEGORY {
-        {
-            this.key = "POST:allCategories/updateCategory";
-            this.command = new UpdateCategoryCommand();
         }
     },
     GET_ADD_PRODUCT {
@@ -173,10 +241,28 @@ public enum CommandEnum {
             this.command = new DeleteClientCommand();
         }
     },
-    UPDATE_CLIENT {
+    POST_UPDATE_CLIENT {
         {
             this.key = "POST:allClients/updateClient";
-            this.command = new UpdateClientCommand();
+            this.command = new PostUpdateClientCommand();
+        }
+    },
+    GET_UPDATE_CLIENT {
+        {
+            this.key = "GET:allClients/updateClient";
+            this.command = new GetUpdateClientCommand();
+        }
+    },
+    COMPLEX_QUERY_ONE{
+        {
+            this.key = "GET:complexQueryOne";
+            this.command = new ComplexQueryOneCommand();
+        }
+    },
+    COMPLEX_QUERY_TWO{
+        {
+            this.key = "GET:complexQueryTwo";
+            this.command = new ComplexQueryTwoCommand();
         }
     };
     Command command;

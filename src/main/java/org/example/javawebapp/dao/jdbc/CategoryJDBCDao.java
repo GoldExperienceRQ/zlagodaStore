@@ -5,6 +5,7 @@ import org.example.javawebapp.entity.Category;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +64,18 @@ public class CategoryJDBCDao implements GenericDao<Category> {
             ex.printStackTrace();
         }
     }
-
+    public Category getById(int id) {
+        Category category = null;
+        try{
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM category WHERE category_id = " + id);
+            rs.next();
+            String name = rs.getString("category_name");
+            return new Category(id, name);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public String getNameById(int id) {
         String name = "";
         try{

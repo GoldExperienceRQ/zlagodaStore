@@ -10,7 +10,7 @@ const isPromotional = document.getElementById("is-promotional")
 form.addEventListener("submit", (e) =>{
     let errors = []
 
-    if(upc.value.length > 50 || upc.value.length < 1){
+    if(upc.value.length > 12 || upc.value.length < 1){
         errors.push("UPC is required")
     }
 

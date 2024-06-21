@@ -6,6 +6,7 @@ import org.example.javawebapp.entity.Client;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +71,18 @@ public class ClientJDBCDao implements GenericDao<Client> {
             stmt.executeUpdate("DELETE FROM client WHERE client_number = '" + e.getClientNumber() + "'");
         } catch (Exception ex) {
             ex.printStackTrace();
+        }
+    }
+    public Client getByClientNumber(String clientNumber){
+        Client client = null;
+        try{
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM client WHERE client_number = '" + clientNumber + "'");
+            rs.next();
+            return new Client(rs.getString("client_number"), rs.getString("client_name"), rs.getString("client_surname"), rs.getString("client_patronymic"), rs.getString("client_city"), rs.getString("client_street"), rs.getString("client_index"), rs.getString("client_phone"), Integer.parseInt(rs.getString("client_percent")));
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 }

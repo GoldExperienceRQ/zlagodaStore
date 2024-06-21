@@ -15,10 +15,19 @@ public final class Page {
     public static final String UPDATE_PRODUCT_VIEW = PREFIX + "updateProduct" + SUFFIX;
     public static final String GET_ALL_CLIENTS_VIEW = PREFIX + "allClients" + SUFFIX;
     public static final String ADD_CLIENT_VIEW = PREFIX  + "addClient" + SUFFIX;
+    public static final String UPDATE_CLIENT_VIEW = PREFIX  + "updateClient" + SUFFIX;
     public static final String ALL_CATEGORIES_VIEW = PREFIX + "allCategories" + SUFFIX;
     public static final String ADD_CATEGORY_VIEW = PREFIX + "addCategory" + SUFFIX;
+    public static final String UPDATE_CATEGORY_VIEW = PREFIX + "updateCategory" + SUFFIX;
     public static final String ADD_EMPLOYEE_VIEW = PREFIX + "addEmployee" + SUFFIX;
     public static final String ALL_EMPLOYEES_VIEW = PREFIX + "allEmployees" + SUFFIX;
+    public static final String UPDATE_EMPLOYEE_VIEW = PREFIX + "updateEmployee" + SUFFIX;
     public static final String ALL_PRODUCTS_IN_STORE_VIEW = PREFIX + "allProductsInStore" + SUFFIX;
     public static final String ADD_PRODUCT_IN_STORE_VIEW = PREFIX + "addProductInStore" + SUFFIX;
+    public static final String UPDATE_PRODUCT_IN_STORE_VIEW = PREFIX + "updateProductInStore" + SUFFIX;
+    public static final String ALL_CHECKS_VIEW = PREFIX + "allChecks" + SUFFIX;
+    public static final String ADD_CHECK_VIEW = PREFIX + "addCheck" + SUFFIX;
+    public static final String UPDATE_CHECK_VIEW = PREFIX + "updateCheck" + SUFFIX;
+    public static final String COMPLEX_QUERY_ONE = PREFIX + "complexQueryOne" + SUFFIX;
+    public static final String COMPLEX_QUERY_TWO = PREFIX + "complexQueryTwo" + SUFFIX;
 }

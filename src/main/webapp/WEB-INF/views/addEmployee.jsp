@@ -31,7 +31,7 @@
     <input type="text" id="role" name="role" placeholder="Role"/>
 
     <label for="salary">Salary</label>
-    <input type="number" id="salary" name="salary" placeholder="Salary in dollars"/>
+    <input type="number" id="salary" name="salary" min="0" max="9999999999999" step="0.0001" placeholder="Salary in dollars"/>
 
     <label for="dateOfStart">Start Date</label>
     <input type="date" id="dateOfStart" name="dateOfStart" placeholder="Start Date"/>
