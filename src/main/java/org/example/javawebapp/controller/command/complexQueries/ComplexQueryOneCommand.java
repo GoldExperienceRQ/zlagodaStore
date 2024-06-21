@@ -17,7 +17,7 @@ public class ComplexQueryOneCommand implements Command {
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse res) throws ExecutionException, ServletException, IOException {
         ComplexCommandJDBCDao complexCommandJDBCDao = new ComplexCommandJDBCDao();
-        complexCommandJDBCDao.complexCommandOne();
+        req.setAttribute("queryResult", complexCommandJDBCDao.complexCommandOne());
         return Page.COMPLEX_QUERY_ONE;
     }
 }

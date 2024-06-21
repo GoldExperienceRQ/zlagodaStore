@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-Complex query 2 executed
+    <div>
+        <p>Query 2 result</p>
+        ${queryResult}
+    </div>
 </body>
 </html>
