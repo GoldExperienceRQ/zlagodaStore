@@ -28,6 +28,10 @@ public final class Page {
     public static final String ALL_CHECKS_VIEW = PREFIX + "allChecks" + SUFFIX;
     public static final String ADD_CHECK_VIEW = PREFIX + "addCheck" + SUFFIX;
     public static final String UPDATE_CHECK_VIEW = PREFIX + "updateCheck" + SUFFIX;
-    public static final String COMPLEX_QUERY_ONE = PREFIX + "complexQueryOne" + SUFFIX;
-    public static final String COMPLEX_QUERY_TWO = PREFIX + "complexQueryTwo" + SUFFIX;
+    public static final String COMPLEX_QUERY_ONE_VALENTYN = PREFIX + "complexQueryOneValentyn" + SUFFIX;
+    public static final String COMPLEX_QUERY_TWO_VALENTYN = PREFIX + "complexQueryTwoValentyn" + SUFFIX;
+    public static final String COMPLEX_QUERY_ONE_DIMA = PREFIX + "complexQueryOneDima" + SUFFIX;
+    public static final String COMPLEX_QUERY_TWO_DIMA = PREFIX + "complexQueryTwoDima" + SUFFIX;
+    public static final String COMPLEX_QUERY_ONE_VLADA = PREFIX + "complexQueryOneVlada" + SUFFIX;
+    public static final String COMPLEX_QUERY_TWO_VLADA = PREFIX + "complexQueryTwoVlada" + SUFFIX;
 }

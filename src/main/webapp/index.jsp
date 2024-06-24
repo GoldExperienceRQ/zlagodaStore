@@ -35,8 +35,21 @@
 <br/>
 <br/>
 
-<a href="${pageContext.request.contextPath}/home/complexQueryOne">Execute Complex Query One</a>
+<a href="${pageContext.request.contextPath}/home/complexQueryOne">Execute Complex Query One Valentyn</a>
 <br/>
-<a href="${pageContext.request.contextPath}/home/complexQueryTwo">Execute Complex Query Two</a>
+<br/>
+<a href="${pageContext.request.contextPath}/home/complexQueryTwo">Execute Complex Query Two Valentyn</a>
+<br/>
+<br/>
+<a href="${pageContext.request.contextPath}/home/complexQueryOneDima">Execute Complex Query One Dima</a>
+<br/>
+<br/>
+<a href="${pageContext.request.contextPath}/home/complexQueryTwoDima">Execute Complex Query Two Dima</a>
+<br/>
+<br/>
+<a href="${pageContext.request.contextPath}/home/complexQueryOneVlada">Execute Complex Query One Vlada</a>
+<br/>
+<br/>
+<a href="${pageContext.request.contextPath}/home/complexQueryTwoVlada">Execute Complex Query Two Vlada</a>
 </body>
 </html>

@@ -6,8 +6,7 @@ import org.example.javawebapp.controller.command.auth.PostLoginCommand;
 import org.example.javawebapp.controller.command.category.*;
 import org.example.javawebapp.controller.command.check.*;
 import org.example.javawebapp.controller.command.clients.*;
-import org.example.javawebapp.controller.command.complexQueries.ComplexQueryOneCommand;
-import org.example.javawebapp.controller.command.complexQueries.ComplexQueryTwoCommand;
+import org.example.javawebapp.controller.command.complexQueries.*;
 import org.example.javawebapp.controller.command.employee.*;
 import org.example.javawebapp.controller.command.product.*;
 import org.example.javawebapp.controller.command.productInStore.*;
@@ -251,6 +250,30 @@ public enum CommandEnum {
         {
             this.key = "GET:allClients/updateClient";
             this.command = new GetUpdateClientCommand();
+        }
+    },
+    COMPLEX_QUERY_ONE_DIMA{
+        {
+            this.key = "GET:complexQueryOneDima";
+            this.command = new ComplexQueryOneDimaCommand();
+        }
+    },
+    COMPLEX_QUERY_ONE_TWO_DIMA{
+        {
+            this.key = "GET:complexQueryTwoDima";
+            this.command = new ComplexQueryTwoDimaCommand();
+        }
+    },
+    COMPLEX_QUERY_ONE_VLADA{
+        {
+            this.key = "GET:complexQueryOneVlada";
+            this.command = new ComplexQueryOneVladaCommand();
+        }
+    },
+    COMPLEX_QUERY_TWO_VLADA{
+        {
+            this.key = "GET:complexQueryTwoVlada";
+            this.command = new ComplexQueryTwoVladaCommand();
         }
     },
     COMPLEX_QUERY_ONE{

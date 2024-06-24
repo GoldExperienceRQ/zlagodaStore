@@ -10,12 +10,12 @@ import org.example.javawebapp.dao.jdbc.ComplexCommandJDBCDao;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
-public class ComplexQueryOneCommand implements Command {
-
+public class ComplexQueryTwoVladaCommand implements Command {
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse res) throws ExecutionException, ServletException, IOException {
         ComplexCommandJDBCDao complexCommandJDBCDao = new ComplexCommandJDBCDao();
-        req.setAttribute("queryResult", complexCommandJDBCDao.complexQueryOne());
-        return Page.COMPLEX_QUERY_ONE_VALENTYN;
+        req.setAttribute("queryResult", complexCommandJDBCDao.complexCommandTwoVlada());
+
+        return Page.COMPLEX_QUERY_TWO_VLADA;
     }
 }

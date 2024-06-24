@@ -15,7 +15,7 @@ public class ComplexQueryTwoCommand implements Command {
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse res) throws ExecutionException, ServletException, IOException {
         ComplexCommandJDBCDao complexCommandJDBCDao = new ComplexCommandJDBCDao();
-        req.setAttribute("queryResult", complexCommandJDBCDao.complexCommandTwo());
-        return Page.COMPLEX_QUERY_TWO;
+        req.setAttribute("queryResult", complexCommandJDBCDao.complexQueryTwo());
+        return Page.COMPLEX_QUERY_TWO_VALENTYN;
     }
 }
